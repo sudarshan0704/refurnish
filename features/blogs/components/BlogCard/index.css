@@ -1,0 +1,135 @@
+.blog-card {
+  height: 100%;
+}
+
+.blog-card__link {
+  display: block;
+  height: 100%;
+  color: inherit;
+}
+
+.blog-card__link:hover {
+  color: inherit;
+}
+
+.blog-card__image {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.blog-card__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 770 / 700;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.blog-card:hover .blog-card__image img {
+  transform: scale(1.05);
+}
+
+.blog-card__arrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-secondary);
+  transition: background .5s ease, color .5s ease;
+}
+
+.blog-card:hover .blog-card__arrow {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.blog-card__arrow svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.blog-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-bottom: 12px;
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.blog-card__meta span:first-child {
+  color: var(--color-primary);
+}
+
+.blog-card__title {
+  display: -webkit-box;
+  margin: 0 0 12px;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.blog-card:hover .blog-card__title {
+  color: var(--color-primary);
+}
+
+.blog-card__excerpt {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  line-height: 1.7;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+@media (max-width: 575px) {
+  .blog-card__image {
+    margin-bottom: 18px;
+    border-radius: 22px;
+  }
+
+  .blog-card__image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .blog-card__arrow {
+    top: 16px;
+    right: 16px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .blog-card__meta {
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+
+  .blog-card__title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .blog-card__excerpt {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}

@@ -1,0 +1,90 @@
+.enquiry-form {
+  padding: 30px 26px;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  background: var(--color-white);
+  box-shadow: 0 16px 40px rgb(38 37 34 / 7%);
+}
+
+.enquiry-form__title {
+  margin-bottom: 6px;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -.5px;
+}
+
+.enquiry-form__intro {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.enquiry-form__label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.enquiry-form__field {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-light);
+  color: var(--color-secondary);
+  font-family: inherit;
+  font-size: 15px;
+  transition: border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.enquiry-form__field::placeholder {
+  color: var(--color-text);
+  opacity: .7;
+}
+
+.enquiry-form__field:focus {
+  border-color: var(--color-primary);
+  outline: 0;
+  background: var(--color-white);
+  box-shadow: 0 0 0 3px rgb(217 86 37 / 15%);
+}
+
+.enquiry-form__field--message {
+  height: auto;
+  padding-top: 12px;
+  resize: vertical;
+}
+
+.enquiry-form__submit {
+  width: 100%;
+  height: 52px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 30px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .25s ease;
+}
+
+.enquiry-form__submit:hover {
+  background: var(--color-secondary);
+}
+
+.enquiry-form__status {
+  margin: 14px 0 0;
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.enquiry-form__status:empty {
+  display: none;
+}

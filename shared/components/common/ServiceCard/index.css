@@ -1,0 +1,187 @@
+.pbmit-service-style-7 {
+  position: relative;
+  height: 100%;
+}
+
+.pbmit-service-style-7 a.pbminfotech-post-item {
+  display: block;
+  color: inherit;
+}
+
+.pbmit-service-style-7 .pbminfotech-post-item,
+.pbmit-service-style-7 .pbminfotech-box-content,
+.pbmit-service-style-7 .pbmit-featured-img-wrapper {
+  position: relative;
+}
+
+.pbmit-service-style-7 .pbmit-service-image-wrapper {
+  transition: all .5s ease-in-out;
+}
+
+.pbmit-service-style-7 .pbmit-featured-img-wrapper::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: 30px;
+  background: linear-gradient(to top, rgb(0 0 0 / 92%) 0%, rgb(0 0 0 / 45%) 38%, transparent 68%);
+  content: "";
+}
+
+.pbmit-service-style-7 .pbmit-featured-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: .92;
+  border-radius: 30px;
+}
+
+.pbmit-service-style-7 .pbmit-featured-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease-in-out;
+}
+
+.pbmit-service-style-7:hover .pbmit-featured-wrapper img {
+  transform: scale(1.05);
+}
+
+.pbmit-service-style-7 .pbmit-featured-img-wrapper::after {
+  position: absolute;
+  z-index: 2;
+  right: -1px;
+  bottom: -1px;
+  width: 119px;
+  height: 112px;
+  background-color: var(--color-white);
+  content: "";
+  mask: url("/images/bg/shape-bottom.png") bottom right no-repeat;
+  -webkit-mask: url("/images/bg/shape-bottom.png") bottom right no-repeat;
+}
+
+.pbmit-service-style-7 .pbmit-content-box {
+  position: absolute;
+  z-index: 3;
+  bottom: 30px;
+  left: 30px;
+  width: 65%;
+}
+
+.pbmit-service-style-7 .pbmit-serv-cat,
+.pbmit-service-style-7 .pbmit-service-icon {
+  display: none;
+}
+
+.pbmit-service-style-7 .pbmit-service-title {
+  margin: 0 0 15px;
+  padding-right: 20%;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.pbmit-service-style-7 .pbmit-service-title {
+  color: var(--color-white);
+}
+
+.pbmit-service-style-7 .pbmit-service-description {
+  display: -webkit-box;
+  height: 0;
+  overflow: hidden;
+  color: var(--color-white);
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  transition: all .25s ease-in-out;
+}
+
+.pbmit-service-style-7 .pbmit-service-description p {
+  margin: 0;
+  line-height: 24px;
+}
+
+.pbmit-service-style-7:hover .pbmit-service-description {
+  height: 56px;
+  opacity: 1;
+}
+
+.pbmit-service-style-7 .pbmit-service-btn {
+  position: absolute;
+  z-index: 4;
+  right: 3px;
+  bottom: 0;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(38 37 34 / 10%);
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  transition: all .5s ease-in-out;
+}
+
+.pbmit-service-style-7:hover .pbmit-service-btn {
+  border-color: transparent;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.pbmit-button-icon {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+}
+
+.pbmit-button-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 767px) {
+  .pbmit-service-style-7 .pbmit-featured-wrapper {
+    aspect-ratio: 1.1;
+  }
+}
+
+@media (max-width: 575px) {
+  .pbmit-service-style-7 .pbmit-featured-wrapper {
+    aspect-ratio: 1.15;
+  }
+
+  .pbmit-service-style-7 .pbmit-featured-wrapper,
+  .pbmit-service-style-7 .pbmit-featured-img-wrapper::before {
+    border-radius: 22px;
+  }
+
+  .pbmit-service-style-7 .pbmit-featured-img-wrapper::after {
+    width: 92px;
+    height: 86px;
+    bottom: -5px;
+    right: -7px;
+  }
+
+  .pbmit-service-style-7 .pbmit-content-box {
+    bottom: 20px;
+    left: 20px;
+    width: 70%;
+  }
+
+  .pbmit-service-style-7 .pbmit-service-title {
+    margin: 0;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .pbmit-service-style-7 .pbmit-service-btn {
+    right: 2px;
+    width: 42px;
+    height: 42px;
+  }
+}

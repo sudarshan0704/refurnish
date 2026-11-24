@@ -1,0 +1,230 @@
+.home-hero,
+.home-hero-slider,
+.home-hero-slide {
+  min-height: 540px;
+  height: calc(100vh - 76px);
+  max-height: 680px;
+}
+
+.home-hero {
+  margin: 0 15px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.home-hero-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-hero-slide > img {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.01);
+}
+
+.home-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(38, 37, 34, .45);
+}
+
+.home-hero-content-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-hero-content {
+  max-width: 860px;
+  color: var(--color-white);
+}
+
+.home-hero-eyebrow {
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 5px 15px;
+  border: 1px solid var(--color-white);
+  border-radius: 20px;
+  color: var(--color-white);
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-hero-content h1 {
+  margin-bottom: 30px;
+  color: var(--color-white);
+  font-size: clamp(32px, 5.2vw, 72px);
+  line-height: 1.06;
+  letter-spacing: -1px;
+}
+
+.home-hero-content h1 span {
+  display: block;
+}
+
+.home-hero-description {
+  max-width: 650px;
+  margin: 0 auto 34px;
+  color: rgba(255, 255, 255, .9);
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.7;
+}
+
+.home-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.hero-primary-cta,
+.hero-secondary-cta {
+  min-width: 178px;
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  font-weight: 700;
+  transition: transform .25s ease, background .25s ease, color .25s ease;
+}
+
+.hero-primary-cta {
+  gap: 18px;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.hero-primary-cta span {
+  font-size: 20px;
+}
+
+.hero-secondary-cta {
+  border: 1px solid rgba(255, 255, 255, .65);
+  color: var(--color-white);
+}
+
+.hero-primary-cta:hover,
+.hero-secondary-cta:hover {
+  transform: translateY(-3px);
+  color: var(--color-white);
+}
+
+.hero-primary-cta:hover {
+  background: var(--color-secondary);
+}
+
+.hero-secondary-cta:hover {
+  border-color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-secondary);
+}
+
+.home-hero .swiper-pagination {
+  bottom: 28px;
+}
+
+.home-hero .swiper-pagination-bullet {
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, .55);
+  opacity: 1;
+  transition: width .25s ease, background .25s ease;
+}
+
+.home-hero .swiper-pagination-bullet-active {
+  width: 48px;
+  background: var(--color-primary);
+}
+
+@media (max-width: 991px) {
+  .home-hero,
+  .home-hero-slider,
+  .home-hero-slide {
+    min-height: 480px;
+    height: min(calc(100svh - 96px), 620px);
+  }
+}
+
+@media (max-width: 767px) {
+  .home-hero {
+    margin: 0 12px;
+    border-radius: 22px;
+  }
+
+  .home-hero,
+  .home-hero-slider,
+  .home-hero-slide {
+    min-height: 440px;
+    height: min(calc(100svh - 88px), 560px);
+  }
+
+  .home-hero-content h1 {
+    margin-bottom: 14px;
+    font-size: clamp(28px, 8.4vw, 34px);
+    line-height: 1.12;
+    letter-spacing: -.5px;
+  }
+
+  .home-hero-eyebrow {
+    margin-bottom: 16px;
+    padding: 4px 12px;
+    font-size: 10.5px;
+    letter-spacing: 1.2px;
+  }
+
+  .home-hero-description {
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .home-hero-actions {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .hero-primary-cta,
+  .hero-secondary-cta {
+    min-width: 0;
+    min-height: 46px;
+    flex: 1 1 0;
+    padding: 0 10px;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .hero-primary-cta span {
+    font-size: 16px;
+  }
+
+  .home-hero .swiper-pagination {
+    bottom: 16px;
+  }
+}
+
+@media (max-width: 359px) {
+  .home-hero-actions {
+    gap: 8px;
+  }
+
+  .hero-primary-cta,
+  .hero-secondary-cta {
+    padding: 0 8px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .hero-primary-cta span {
+    display: none;
+  }
+}

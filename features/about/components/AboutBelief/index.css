@@ -1,0 +1,128 @@
+.about-belief {
+  padding: 0 15px;
+}
+
+.about-belief .container-fluid {
+  padding: 0;
+}
+
+.about-belief__panel {
+  display: flex;
+  height: 100%;
+  min-height: 560px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px clamp(30px, 6vw, 100px);
+  border-radius: 30px;
+  background: var(--color-secondary);
+  color: rgb(255 255 255 / 78%);
+}
+
+.about-belief__panel .eyebrow {
+  align-self: flex-start;
+}
+
+.about-belief__panel h2 {
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+
+.about-belief__panel > p:not(.eyebrow) {
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+.about-belief__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  margin-top: 34px;
+}
+
+.about-belief__badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.about-belief__ring {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 20px;
+}
+
+.about-belief__badge h3 {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 1.3;
+  white-space: pre-line;
+}
+
+.about-belief__image {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.about-belief__image img {
+  object-fit: cover;
+}
+
+@media (max-width: 1199px) {
+  .about-belief__panel {
+    min-height: 0;
+    padding: 56px 48px;
+  }
+
+  .about-belief__image {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-belief {
+    padding: 0 12px;
+  }
+
+  .about-belief__panel {
+    padding: 40px 22px;
+    border-radius: 22px;
+  }
+
+  .about-belief__panel h2 {
+    font-size: 26px;
+  }
+
+  .about-belief__panel > p:not(.eyebrow) {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about-belief__badges {
+    gap: 16px;
+    margin-top: 26px;
+  }
+
+  .about-belief__badge h3 {
+    font-size: 16px;
+  }
+
+  .about-belief__image {
+    aspect-ratio: 4 / 3;
+    border-radius: 22px;
+  }
+}

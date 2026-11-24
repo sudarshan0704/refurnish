@@ -1,0 +1,28 @@
+.blog-list {
+  padding: 100px 0;
+}
+
+.blog-list .section-heading {
+  max-width: 760px;
+  margin: 0 auto 56px;
+}
+
+@media (max-width: 991px) {
+  .blog-list {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-list {
+    padding: 44px 0 56px;
+  }
+
+  .blog-list .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .blog-list .row {
+    --bs-gutter-y: 2.5rem;
+  }
+}

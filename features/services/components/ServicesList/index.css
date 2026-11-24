@@ -1,0 +1,40 @@
+.services-list {
+  padding: 100px 0;
+  background: var(--color-white);
+}
+
+.services-list .section-heading {
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.services-list__cta {
+  margin: 60px 0 0;
+  text-align: center;
+}
+
+.services-list__cta a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .services-list {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .services-list {
+    padding: 44px 0 56px;
+  }
+
+  .services-list .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .services-list__cta {
+    margin-top: 40px;
+    font-size: 15px;
+  }
+}

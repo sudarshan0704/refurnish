@@ -1,0 +1,220 @@
+.home-contact-cta {
+  position: relative;
+  display: flex;
+  min-height: 460px;
+  align-items: center;
+  overflow: hidden;
+  margin: var(--section-space-small) 30px var(--section-space);
+  padding: 120px 0;
+  border-radius: 30px;
+  background-image: url("/images/home/contact-cta/homepage5-cta-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.home-contact-cta__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(38 37 34 / 82%) 0%,
+    rgb(38 37 34 / 56%) 58%,
+    rgb(38 37 34 / 22%) 100%
+  );
+}
+
+.home-contact-cta .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-contact-cta__heading {
+  max-width: 760px;
+  margin: 0;
+}
+
+.home-contact-cta__heading h2 {
+  color: var(--color-white);
+}
+
+.home-contact-cta__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  color: var(--color-white);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.home-contact-cta__eyebrow::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  content: "";
+}
+
+.home-contact-cta__badge {
+  position: relative;
+  width: 180px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.home-contact-cta__badge::before {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-primary);
+  content: "";
+  mask: url("/images/home/contact-cta/contact-burst.svg") center / contain no-repeat;
+  -webkit-mask: url("/images/home/contact-cta/contact-burst.svg") center / contain no-repeat;
+  animation: home-contact-burst-spin 15s linear infinite;
+}
+
+.home-contact-cta__badge-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-contact-cta__badge-link:hover {
+  color: var(--color-white);
+}
+
+.home-contact-cta__phone {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -120px;
+  display: inline-flex;
+  width: 320px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 28px;
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: color 0.25s ease;
+}
+
+.home-contact-cta__phone:hover {
+  color: var(--color-primary);
+}
+
+.home-contact-cta__phone svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+@keyframes home-contact-burst-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-contact-cta__badge::before {
+    animation: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .home-contact-cta {
+    padding: 100px 0;
+  }
+
+  .home-contact-cta__phone {
+    top: auto;
+    right: 50%;
+    bottom: 18px;
+    width: auto;
+    height: auto;
+    padding: 14px 22px;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .home-contact-cta {
+    min-height: 0;
+    margin: var(--section-space-small) 12px var(--section-space);
+    padding: 64px 0 104px;
+    border-radius: 22px;
+  }
+
+  .home-contact-cta__heading {
+    text-align: center;
+  }
+
+  .home-contact-cta__badge {
+    width: 148px;
+    margin-top: 30px;
+  }
+
+  .home-contact-cta__badge-link {
+    font-size: 26px;
+  }
+
+  .home-contact-cta__phone {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-contact-cta__heading {
+    text-align: center !important;
+  }
+
+  .home-contact-cta__heading h2 {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .home-contact-cta__eyebrow {
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .home-contact-cta__eyebrow::before {
+    display: none;
+  }
+
+  .home-contact-cta {
+    padding: 52px 0 96px;
+  }
+
+  .home-contact-cta__badge {
+    width: 128px;
+    margin-top: 22px;
+  }
+
+  .home-contact-cta__badge-link {
+    font-size: 22px;
+  }
+}
