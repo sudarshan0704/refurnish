@@ -13,9 +13,9 @@ export default function HomeServiceArea() {
               <p className="eyebrow">Service Area</p>
               <h2 id="service-area-heading">Furniture restoration across Bangalore</h2>
               <p>
-                Refurnish is based in Bangalore, Karnataka, and serves homeowners, families,
-                apartment owners and property managers across the city. Tell us where you are
-                and send a few photos, and we will confirm how we can help.
+                Refurnish provides furniture repair and restoration services in Bangalore,
+                Karnataka. Tell us where you are and send a few photos so we can confirm
+                the piece and the work you need.
               </p>
             </div>
 

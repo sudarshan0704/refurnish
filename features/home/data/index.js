@@ -1,19 +1,19 @@
 export const heroSlides = [
   {
     eyebrow: "Furniture restoration in Bangalore",
-    title: "Don't Replace It.",
-    highlight: "Refurnish It.",
+    title: "Furniture Repair &",
+    highlight: "Restoration in Bangalore",
     description:
-      "We restore, repair and redesign your existing furniture to give it a fresh, beautiful and useful life.",
+      "Repair, restore and renew your existing furniture. We work on sofas, chairs, wooden furniture and well-loved pieces across Bangalore.",
     image: "/images/hero/home-slide-1.jpg",
     alt: "Refurnished wooden furniture and restored living room interior",
   },
   {
     eyebrow: "Polishing, upholstery & makeovers",
-    title: "Same Furniture.",
-    highlight: "A Fresh New Finish.",
+    title: "Keep the Furniture.",
+    highlight: "Refresh the Finish.",
     description:
-      "From wooden furniture polishing to sofa upholstery and refinishing, we help your favourite pieces feel new again.",
+      "From wooden furniture polishing and sofa upholstery to refinishing and redesign, give a familiar piece a useful new look.",
     image: "/images/hero/home-slide-2.jpg",
     alt: "Modern restored sofa and refreshed furniture interior",
   },

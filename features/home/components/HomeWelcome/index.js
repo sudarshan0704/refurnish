@@ -16,8 +16,9 @@ export default function HomeWelcome() {
               <p className="eyebrow">Welcome to Refurnish</p>
               <h2 id="welcome-heading">Old furniture, restored not replaced.</h2>
               <p>
-                Refurnish restores, repairs and refinishes furniture in Bangalore. If a piece
-                still has good bones, we fix what is worn and renew the finish or fabric.
+                Refurnish provides furniture repair and restoration in Bangalore. We assess
+                the frame, joints, finish and upholstery, then repair or renew the piece rather
+                than treating every problem as a reason to replace it.
               </p>
               <Link className="welcome-cta" href="/about">
                 <span>About Us</span>

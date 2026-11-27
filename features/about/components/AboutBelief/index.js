@@ -15,10 +15,16 @@ export default function AboutBelief() {
               <p className="eyebrow">Why restoration</p>
               <h2 id="about-belief-heading">Old furniture is worth a second life.</h2>
               <p>
-                Replacing furniture is expensive, and it often means letting go of pieces
-                that still have good structure or mean something to the family. We
-                believe in giving them a better finish, fresh fabric or a new design
-                first, so you can keep using what you already own.
+                Restoration starts with a careful assessment, not a fixed package. A solid
+                wooden table may need joint repair and refinishing, while a comfortable sofa
+                may need a frame check and new upholstery. We explain the work required and
+                keep the finish appropriate to the piece.
+              </p>
+              <p>
+                Our approach is practical: preserve good structure, repair damage properly,
+                prepare surfaces carefully and use the right finish or fabric for the intended
+                use. The aim is to help furniture return to daily use without unnecessary
+                replacement.
               </p>
               <div className="about-belief__badges">
                 {beliefPoints.map((point) => {

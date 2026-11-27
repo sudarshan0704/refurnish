@@ -1,17 +1,18 @@
 import { contactDetails } from "@/features/contact/data";
-
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/\/$/, "");
+import { siteUrl } from "@/shared/site-config";
 
 export function absoluteUrl(path) {
-  return siteUrl ? `${siteUrl}${path}` : undefined;
+  return `${siteUrl}${path}`;
 }
 
 function business() {
   return {
     "@type": "LocalBusiness",
+    "@id": `${siteUrl}/#organization`,
     name: "Refurnish",
     telephone: "+917676045748",
-    ...(siteUrl ? { url: siteUrl } : {}),
+    url: siteUrl,
+    logo: `${siteUrl}/logo.png`,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Bangalore",
@@ -41,7 +42,7 @@ export function serviceStructuredData(service) {
       name: service.pageTitle,
       serviceType: service.title,
       description: service.metaDescription,
-      ...(url ? { url } : {}),
+      url,
       provider: business(),
       areaServed: { "@type": "City", name: "Bangalore" },
     },
@@ -56,19 +57,15 @@ export function serviceStructuredData(service) {
     },
   ];
 
-  // Breadcrumb items need absolute URLs, so they are only added once
-  // NEXT_PUBLIC_SITE_URL is set.
-  if (siteUrl) {
-    graph.push({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
-        { "@type": "ListItem", position: 2, name: "Services", item: `${siteUrl}/services` },
-        { "@type": "ListItem", position: 3, name: service.pageTitle, item: url },
-      ],
-    });
-  }
+  graph.push({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Services", item: `${siteUrl}/services` },
+      { "@type": "ListItem", position: 3, name: service.pageTitle, item: url },
+    ],
+  });
 
   return graph;
 }

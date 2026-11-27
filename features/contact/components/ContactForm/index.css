@@ -216,7 +216,7 @@ select.contact-field {
 
 @media (max-width: 575px) {
   .contact-form {
-    padding: 30px 22px;
+    padding: 26px 16px;
     border-radius: 22px;
   }
 }
@@ -261,8 +261,9 @@ select.contact-field {
   }
 
   .contact-field {
-    height: 50px;
+    height: 40px;
     font-size: 16px;
+    border-radius: 8px;
   }
 
   .contact-field--message {

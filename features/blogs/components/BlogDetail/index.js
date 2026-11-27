@@ -4,8 +4,27 @@ import { formatDate } from "../../data";
 import "./index.css";
 
 export default function BlogDetail({ post }) {
+  const articleStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+    },
+    image: post.cover,
+  };
+
   return (
     <article className="blog-detail">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleStructuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="container">
         <div className="blog-detail__inner">
           <nav className="blog-detail__crumbs" aria-label="Breadcrumb">
@@ -36,6 +55,38 @@ export default function BlogDetail({ post }) {
             className="blog-content"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {post.serviceLinks?.length ? (
+            <aside className="blog-detail__links" aria-label="Related services">
+              <h2>Related Refurnish services</h2>
+              <ul>
+                {post.serviceLinks.map(([href, title]) => (
+                  <li key={href}>
+                    <Link href={href}>{title}</Link>
+                  </li>
+                ))}
+                <li>
+                  <Link href="/contact">Contact Refurnish in Bangalore</Link>
+                </li>
+              </ul>
+            </aside>
+          ) : null}
+
+          {post.relatedLinks?.length ? (
+            <aside className="blog-detail__links" aria-label="Related blog guides">
+              <h2>Continue reading</h2>
+              <ul>
+                {post.relatedLinks.map(([href, title]) => (
+                  <li key={href}>
+                    <Link href={href}>{title}</Link>
+                  </li>
+                ))}
+                <li>
+                  <Link href="/about">About our furniture restoration approach</Link>
+                </li>
+              </ul>
+            </aside>
+          ) : null}
 
           {post.tags?.length ? (
             <ul className="blog-detail__tags" aria-label="Tags">

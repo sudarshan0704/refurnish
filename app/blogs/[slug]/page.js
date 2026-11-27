@@ -15,14 +15,14 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: post.title,
+    title: post.metaTitle || post.title,
     description: post.excerpt,
     keywords: post.tags,
     alternates: {
       canonical: `/blogs/${post.slug}`,
     },
     openGraph: {
-      title: post.title,
+      title: post.metaTitle || post.title,
       description: post.excerpt,
       type: "article",
       locale: "en_IN",
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: post.metaTitle || post.title,
       description: post.excerpt,
       images: [post.cover],
     },

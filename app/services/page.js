@@ -1,4 +1,5 @@
 import ServicesPage from "@/features/services";
+import { defaultOgImage } from "@/shared/site-config";
 
 export const metadata = {
   title: "Furniture Restoration Services in Bangalore",
@@ -19,10 +20,12 @@ export const metadata = {
     title: "Furniture Restoration Services in Bangalore | Refurnish",
     description:
       "Restoration, upholstery, repair, polishing, refinishing and redesign for the furniture you already own.",
+    images: [defaultOgImage.url],
     type: "website",
     locale: "en_IN",
     siteName: "Refurnish",
     url: "/services",
+    images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",

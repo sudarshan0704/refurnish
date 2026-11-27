@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Space_Grotesk } from "next/font/google";
+import { Hanken_Grotesk, Roboto } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "@/shared/components/layout/Header";
@@ -7,10 +7,28 @@ import Footer from "@/shared/components/layout/Footer";
 import BootstrapClient from "@/shared/components/common/BootstrapClient";
 import WhatsAppFloat from "@/shared/components/layout/WhatsAppFloat";
 import AosInit from "@/shared/components/common/AosInit";
+import { defaultOgImage, siteUrl } from "@/shared/site-config";
 
-const spaceGrotesk = Space_Grotesk({
+const organizationStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${siteUrl}/#organization`,
+  name: "Refurnish",
+  url: siteUrl,
+  logo: `${siteUrl}/logo.png`,
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+917676045748",
+    contactType: "customer service",
+    areaServed: "IN",
+    availableLanguage: ["English"],
+  },
+};
+
+const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-hanken-grotesk",
   display: "swap",
 });
 
@@ -22,9 +40,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: process.env.NEXT_PUBLIC_SITE_URL
-    ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
-    : undefined,
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Refurnish | Furniture Restoration in Bangalore",
     template: "%s | Refurnish",
@@ -44,16 +60,27 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Refurnish",
+    images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",
+    images: [defaultOgImage.url],
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${roboto.variable}`}>
+    <html lang="en" className={`${hankenGrotesk.variable} ${roboto.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationStructuredData).replace(
+              /</g,
+              "\\u003c",
+            ),
+          }}
+        />
         <BootstrapClient />
         <AosInit />
         <noscript>

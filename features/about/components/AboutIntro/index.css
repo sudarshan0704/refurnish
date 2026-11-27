@@ -1,5 +1,5 @@
 .about-intro {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .about-intro__copy {
@@ -76,7 +76,7 @@
   display: block;
   color: var(--color-secondary);
   font-family: var(--font-heading);
-  font-size: clamp(36px, 4.4vw, 64px);
+  font-size: clamp(30px, 2.4vw, 40px);
   line-height: 1.05;
   letter-spacing: -2px;
 }

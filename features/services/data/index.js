@@ -69,6 +69,26 @@ export const services = [
     overview: [
       "Good wooden furniture is built to last, but years of daily use take their toll. Finishes fade, surfaces pick up scratches and water marks, and joints loosen. We restore wooden furniture so you can keep using the pieces you already own, with a finish that looks cared for again.",
       "Every piece is different, so we start by looking closely at the wood, the damage and the look you want. From there we repair what is worn or broken and renew the finish. Our aim is to bring the piece back to its best while keeping the character that made you choose it.",
+      "For customers in Bangalore and Bengaluru, we assess photos before discussing the piece, the repair needed and the restoration options.",
+    ],
+    scopeHeading: "Old wooden furniture, assessed piece by piece",
+    scopeIntro:
+      "Wooden furniture restoration combines structural work with surface restoration. A dining table may need loose joints tightened and a worn tabletop refinished, while a cabinet may need surface repair and polishing. We confirm the scope after assessing the wood, finish and movement of the piece.",
+    idealFor: [
+      "Solid wooden tables and chairs with surface wear or loose joints",
+      "Cabinets and shelves that have a sound frame but a tired finish",
+      "Old wooden furniture that fits the room and has sentimental value",
+      "Pieces that need a combination of repair, polishing or refinishing",
+    ],
+    blogLinks: [
+      ["common-furniture-repairs", "Common furniture repairs and structural problems"],
+      ["how-furniture-polishing-brings-back-the-shine", "How wooden furniture polishing restores the shine"],
+      ["refinishing-vs-repainting-furniture", "Refinishing versus repainting furniture"],
+    ],
+    materials: [
+      "Solid wood tables, chairs, cabinets and shelves",
+      "Wooden beds, wardrobes and storage furniture",
+      "Natural wood finishes and existing polished surfaces",
     ],
     problems: [
       "Dull, faded or uneven wood finish",
@@ -151,6 +171,26 @@ export const services = [
     overview: [
       "A sofa or chair that is still comfortable does not have to be replaced just because the covering looks tired. Fabric fades, leather cracks and cushions lose their shape. With new upholstery, the same piece can look and feel fresh again.",
       "We replace the upholstery on sofas, armchairs and dining chairs, and help you choose a fabric or leather that suits your room and the way you use the furniture. It is a simple way to update your living space while keeping furniture you already know is comfortable.",
+      "In Bangalore and Bengaluru, send clear photos of the sofa or chair, its frame and the worn areas so we can assess whether upholstery or frame repair is needed first.",
+    ],
+    scopeHeading: "When to choose sofa or chair upholstery",
+    scopeIntro:
+      "Re-upholstery is suitable when the main shape and frame of the sofa or chair are sound but the covering is worn, stained or dated. We inspect the piece before work because torn upholstery can sometimes hide loose joints or weakened areas that need furniture repair first.",
+    idealFor: [
+      "Sofas with strong frames but faded, torn or stained fabric",
+      "Armchairs and dining chairs that need a new seat or complete cover",
+      "Leather furniture with a worn cover and intact structure",
+      "Pieces that need fresh fabric or leather to match a redesigned room",
+    ],
+    blogLinks: [
+      ["signs-your-sofa-needs-new-upholstery", "Signs your sofa needs new upholstery"],
+      ["restore-or-replace-old-furniture", "How to decide whether to restore or replace furniture"],
+      ["modern-makeover-for-outdated-furniture", "Ideas for modernising outdated furniture"],
+    ],
+    materials: [
+      "Fabric sofas, settees and armchairs",
+      "Leather and leatherette furniture",
+      "Dining chairs and removable or fixed seat covers",
     ],
     problems: [
       "Faded, stained or worn fabric",
@@ -233,6 +273,26 @@ export const services = [
     overview: [
       "Furniture takes a lot of daily wear. Chairs get pulled in and out, tables carry weight, and doors and drawers open and close hundreds of times. Sooner or later something gives. Most of the time, the damage can be put right.",
       "We repair and strengthen furniture so it is safe and comfortable to use again. We look for the cause of the problem, repair it properly and, where needed, finish the repair so it blends in. A repair is also the right first step before any polish, paint or upholstery work, because a new finish only lasts on a piece that is sound underneath.",
+      "Our Bangalore furniture repair service starts with photos or a description of the damage. We confirm the repair scope before work so you know what is being fixed.",
+    ],
+    scopeHeading: "Furniture repair for frames, joints and surfaces",
+    scopeIntro:
+      "The aim of furniture repair is to restore strength and use, not simply hide damage. We identify whether a chair is wobbling because of a loose joint, a cracked frame or a damaged leg, then secure or reinforce the correct area before any surface finish is renewed.",
+    idealFor: [
+      "Wobbly chairs and tables with loose or separated joints",
+      "Chairs, sofas or wooden furniture with damaged supports",
+      "Furniture with dents, chips or surface damage",
+      "Pieces that need structural repair before polishing or upholstery",
+    ],
+    blogLinks: [
+      ["common-furniture-repairs", "Guide to loose joints, wobbly chairs and worn frames"],
+      ["restore-or-replace-old-furniture", "Repair or replace old furniture: how to decide"],
+      ["how-furniture-polishing-brings-back-the-shine", "Why wooden furniture needs a sound base before polishing"],
+    ],
+    materials: [
+      "Wooden chairs, tables, cabinets and frames",
+      "Sofa and armchair frames",
+      "Loose joints, legs, supports and surface damage",
     ],
     problems: [
       "Loose joints and wobbling chairs or tables",
@@ -315,6 +375,26 @@ export const services = [
     overview: [
       "Wood looks best when its finish is in good condition. Over time the surface of wooden furniture loses its shine, picks up marks and darkens unevenly. Polishing renews the finish and shows off the natural colour and grain of the wood again.",
       "We prepare the surface, deal with marks and uneven areas, and apply a fresh finish. Whether it is a dining table that has lost its gloss, a cabinet that looks tired or a set of chairs that no longer match, polishing is one of the simplest ways to make wooden furniture look cared for.",
+      "Customers in Bangalore can share photos of the affected surface so we can check whether polishing is enough or whether repair and refinishing are needed first.",
+    ],
+    scopeHeading: "Wood polishing for dull and marked surfaces",
+    scopeIntro:
+      "Furniture polishing restores the top finish of suitable wooden furniture. It is a better choice than refinishing when you want to keep the natural colour and grain, while deeper scratches, cracks or peeling polish may need furniture repair or a complete refinishing process.",
+    idealFor: [
+      "Dining and coffee tables with dull or marked tabletops",
+      "Wooden cabinets, doors and shelves with uneven shine",
+      "Chairs and beds that need a renewed but natural wood finish",
+      "Surfaces suitable for polishing rather than a new paint colour",
+    ],
+    blogLinks: [
+      ["how-furniture-polishing-brings-back-the-shine", "What furniture polishing does and what it does not"],
+      ["refinishing-vs-repainting-furniture", "When polishing is not the right finish"],
+      ["common-furniture-repairs", "Check whether surface damage also needs repair"],
+    ],
+    materials: [
+      "Dining tables and coffee tables",
+      "Wooden chairs, beds and cabinets",
+      "Doors, shelves and other finished wooden surfaces",
     ],
     problems: [
       "Wood that looks dull, dry or lifeless",
@@ -397,6 +477,26 @@ export const services = [
     overview: [
       "When furniture is sound but no longer suits your home, a new finish can change it completely. Refinishing renews or replaces the existing finish and keeps the look of the material. Repainting changes the colour altogether.",
       "We prepare the piece properly, then apply the finish or paint you have chosen. It is a practical way to match furniture to a new colour scheme, update an older design or simply replace a finish that has worn out. The result is furniture that fits your interiors without the cost and effort of buying new.",
+      "For Bangalore homes, we discuss the intended room and use so the finish is suitable for the piece rather than simply applying a new colour.",
+    ],
+    scopeHeading: "Refinishing and repainting with proper preparation",
+    scopeIntro:
+      "Refinishing means renewing or replacing the existing finish while repainting applies a new colour or opaque style. The correct process depends on the wood, the existing coating and the result you want. Surface damage and loose joints must be addressed before a lasting finish can be applied.",
+    idealFor: [
+      "Wooden furniture that needs a new colour or coordinated finish",
+      "Tired tables, chairs or cabinets that are structurally sound",
+      "Matching sets or pieces that need one consistent colour",
+      "Furniture where polishing will not achieve the desired look",
+    ],
+    blogLinks: [
+      ["refinishing-vs-repainting-furniture", "Refinishing versus repainting: which should you choose"],
+      ["modern-makeover-for-outdated-furniture", "Modern furniture makeover ideas"],
+      ["how-furniture-polishing-brings-back-the-shine", "How polishing differs from changing the finish"],
+    ],
+    materials: [
+      "Wooden tables, chairs, cabinets and storage",
+      "Suitable solid-surface furniture pieces",
+      "Natural, stained or painted finishes",
     ],
     problems: [
       "A colour or finish that no longer suits your interiors",
@@ -479,6 +579,26 @@ export const services = [
     overview: [
       "Tastes and homes change, and furniture that once suited a room can start to feel out of place. That does not mean it has to go. A makeover can change the finish, the fabric and the overall look of a piece so it fits your home as it is today.",
       "We look at the piece, the room it belongs in and how you want to use it, then plan a makeover that makes sense. It might be a new finish, a new covering or a mix of changes. The idea is simple: instead of replacing old furniture, let us transform it into something you would love to use and show off.",
+      "Our furniture redesign and makeover service in Bangalore begins with photos and a clear description of the look you want, followed by an assessment of what can be changed.",
+    ],
+    scopeHeading: "A complete furniture makeover planned around the piece",
+    scopeIntro:
+      "Furniture redesign can combine repair, upholstery, refinishing and colour changes. We assess the condition and style first, then recommend changes that suit the room and keep the work practical. A makeover should solve the look and, where needed, restore the structure of the furniture.",
+    idealFor: [
+      "Old furniture that is useful but visually outdated",
+      "Pieces with a sound structure that need a coordinated new look",
+      "Sofas or chairs that need both upholstery and visual updating",
+      "Wooden furniture that needs a new finish and repair work",
+    ],
+    blogLinks: [
+      ["modern-makeover-for-outdated-furniture", "How to give outdated furniture a modern makeover"],
+      ["restore-or-replace-old-furniture", "Restore or replace: make the decision with confidence"],
+      ["refinishing-vs-repainting-furniture", "Choosing between refinishing and repainting"],
+    ],
+    materials: [
+      "Wooden furniture needing a finish or colour change",
+      "Sofas and chairs needing upholstery or refinishing",
+      "Good-condition pieces that need a coordinated makeover",
     ],
     problems: [
       "Outdated furniture that no longer suits your style",

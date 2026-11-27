@@ -43,14 +43,19 @@ export default function HomeRestore() {
               ))}
             </ul>
 
-            <Link className="refurnish-pill-button" href="/contact">
-              Get a Free Quote
-              <i aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M7 17 17 7M8 7h9v9" />
-                </svg>
-              </i>
-            </Link>
+            <div className="home-restore__actions">
+              {/* <Link className="refurnish-pill-button" href="/blogs/restore-or-replace-old-furniture">
+                Read the Repair vs Replacement Guide
+              </Link> */}
+              <Link className="refurnish-pill-button" href="/contact">
+                Ask About Your Furniture
+                <i aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </i>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

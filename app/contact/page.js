@@ -1,4 +1,5 @@
 import ContactPage from "@/features/contact";
+import { defaultOgImage } from "@/shared/site-config";
 
 export const metadata = {
   title: "Contact Us | Furniture Restoration in Bangalore",
@@ -21,11 +22,13 @@ export const metadata = {
     locale: "en_IN",
     siteName: "Refurnish",
     url: "/contact",
+    images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Refurnish | Furniture Restoration in Bangalore",
     description: "Call or WhatsApp us about your furniture in Bangalore.",
+    images: [defaultOgImage.url],
   },
 };
 

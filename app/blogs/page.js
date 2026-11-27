@@ -1,4 +1,5 @@
 import BlogsPage from "@/features/blogs";
+import { defaultOgImage } from "@/shared/site-config";
 
 export const metadata = {
   title: "Furniture Restoration Blog | Tips for Bangalore Homes",
@@ -15,11 +16,13 @@ export const metadata = {
     locale: "en_IN",
     siteName: "Refurnish",
     url: "/blogs",
+    images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Furniture Restoration Blog | Refurnish",
     description: "Guides on furniture restoration, upholstery, polishing and repair.",
+    images: [defaultOgImage.url],
   },
 };
 

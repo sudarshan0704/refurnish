@@ -16,10 +16,15 @@ export default function AboutIntro() {
               <p className="eyebrow">About Refurnish</p>
               <h2 id="about-intro-heading">Don&apos;t replace it. Refurnish it.</h2>
               <p>
-                We restore, repair, refinish and redesign furniture in Bangalore. Old
-                sofas, wooden tables and worn chairs often have good structure and a
-                story worth keeping. With the right craftsmanship, they can look fresh
-                again without the cost of buying new.
+                Refurnish is a Bangalore furniture restoration business focused on repair,
+                restoration, upholstery, polishing and refinishing. We begin by looking at
+                the structure and condition of the piece, then recommend a practical plan
+                for the damage and the result you want.
+              </p>
+              <p>
+                We work on furniture that is worth keeping for its comfort, usefulness,
+                material or sentimental value. Where a piece is sound, we help restore its
+                function and appearance instead of automatically replacing it.
               </p>
             </div>
             <Link className="refurnish-pill-button" href="/services">

@@ -6,11 +6,11 @@
   --color-white: #ffffff;
   --color-text: #56514d;
   --color-border: #e5ddd4;
-  --font-heading: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  --font-heading: var(--font-hanken-grotesk), "Hanken Grotesk", "Hanken Grotesk Fallback";
   --font-body: var(--font-roboto), "Roboto", sans-serif;
   /* --font-body:var(--font-space-grotesk), "Space Grotesk", sans-serif; */
-  --section-space: 100px;
-  --section-space-small: 70px;
+  --section-space: 60px;
+  --section-space-small: 40px;
 }
 
 * {
@@ -114,7 +114,7 @@ h6 {
 
 .section-heading h2 {
   margin-bottom: 12px;
-  font-size: clamp(30px, 4vw, 46px);
+  font-size: clamp(30px, 4vw, 52px);
   line-height: 1.08;
   letter-spacing: -1px;
 }
@@ -133,6 +133,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .eyebrow::before {
@@ -176,8 +177,8 @@ img {
 
 @media (max-width: 991px) {
   :root {
-    --section-space: 72px;
-    --section-space-small: 52px;
+    --section-space: 60px;
+    --section-space-small: 40px;
   }
 
   .container {
@@ -193,8 +194,8 @@ img {
 
 @media (max-width: 575px) {
   :root {
-    --section-space: 56px;
-    --section-space-small: 40px;
+    --section-space: 40px;
+    --section-space-small: 30px;
   }
 
   body {

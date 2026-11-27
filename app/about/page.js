@@ -1,9 +1,10 @@
 import AboutPage from "@/features/about";
+import { defaultOgImage } from "@/shared/site-config";
 
 export const metadata = {
-  title: "About Us | Furniture Restoration in Bangalore",
+  title: "About Refurnish | Furniture Restoration in Bangalore",
   description:
-    "Refurnish restores, repairs, refinishes and redesigns old furniture in Bangalore. Learn why we believe in giving furniture a second life instead of replacing it.",
+    "Meet Refurnish, a Bangalore furniture restoration service focused on repair, upholstery, polishing and refinishing. Learn our practical approach to restoring furniture.",
   keywords: [
     "About Refurnish",
     "Furniture Restoration in Bangalore",
@@ -21,12 +22,14 @@ export const metadata = {
     locale: "en_IN",
     siteName: "Refurnish",
     url: "/about",
+    images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Refurnish",
     description:
       "Furniture restoration and makeover expertise in Bangalore.",
+    images: [defaultOgImage.url],
   },
 };
 

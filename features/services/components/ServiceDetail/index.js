@@ -62,6 +62,27 @@ export default function ServiceDetail({ service }) {
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
               ))}
 
+              {service.scopeHeading ? (
+                <>
+                  <h2>{service.scopeHeading}</h2>
+                  <p>{service.scopeIntro}</p>
+                </>
+              ) : null}
+
+              {service.idealFor?.length ? (
+                <>
+                  <h2>Who this service is ideal for</h2>
+                  <CheckList items={service.idealFor} />
+                </>
+              ) : null}
+
+              {service.materials?.length ? (
+                <>
+                  <h2>Furniture and materials we work with</h2>
+                  <CheckList items={service.materials} />
+                </>
+              ) : null}
+
               <h2>Problems we solve</h2>
               <CheckList items={service.problems} />
 
@@ -90,6 +111,30 @@ export default function ServiceDetail({ service }) {
                   </li>
                 ))}
               </ol>
+
+              <h2>{service.title} in Bangalore</h2>
+              <p>
+                We serve customers in Bangalore and Bengaluru. The exact work depends on
+                the furniture, its condition and the result you want. Send photos of the
+                whole piece and close-ups of the damage so we can assess whether repair,
+                restoration, polishing, refinishing or upholstery is the appropriate next step.
+                You can also read{" "}
+                <Link href="/about">about Refurnish and our restoration approach</Link>{" "}
+                before requesting an assessment.
+              </p>
+
+              {service.blogLinks?.length ? (
+                <>
+                  <h2>Related furniture care and decision guides</h2>
+                  <ul className="service-detail__related">
+                    {service.blogLinks.map(([slug, title]) => (
+                      <li key={slug}>
+                        <Link href={`/blogs/${slug}`}>{title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
 
               <h2>Frequently asked questions</h2>
               <div className="service-detail__faqs">
@@ -131,6 +176,12 @@ export default function ServiceDetail({ service }) {
                 </li>
                 <li>
                   <Link href="/blogs">Furniture care tips and guides</Link>
+                </li>
+                <li>
+                  <Link href="/about">Our approach to furniture restoration</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact Refurnish in Bangalore</Link>
                 </li>
               </ul>
             </article>
